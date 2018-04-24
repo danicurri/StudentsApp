@@ -45,7 +45,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmbBoxFormato = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblBusquedaFallida = new System.Windows.Forms.Label();
+            this.txtFechaInscripcion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,10 +64,7 @@
             this.txtNombreBuscar = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.txtFechaInscripcion = new System.Windows.Forms.TextBox();
-            this.lblBusquedaFallida = new System.Windows.Forms.Label();
-            this.cmbBoxFormato = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -107,6 +108,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 3;
+            this.txtId.Text = "a";
             // 
             // txtNombre
             // 
@@ -211,7 +213,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(354, 214);
+            this.tabControl1.Size = new System.Drawing.Size(492, 214);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
@@ -220,7 +222,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(346, 188);
+            this.tabPage1.Size = new System.Drawing.Size(484, 188);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Añadir alumno";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -243,6 +245,27 @@
             this.tabPage2.Text = "Buscar alumno";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 97);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Formato";
+            // 
+            // cmbBoxFormato
+            // 
+            this.cmbBoxFormato.FormattingEnabled = true;
+            this.cmbBoxFormato.Items.AddRange(new object[] {
+            "Txt",
+            "Json",
+            "Xml"});
+            this.cmbBoxFormato.Location = new System.Drawing.Point(9, 113);
+            this.cmbBoxFormato.Name = "cmbBoxFormato";
+            this.cmbBoxFormato.Size = new System.Drawing.Size(100, 21);
+            this.cmbBoxFormato.TabIndex = 6;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lblBusquedaFallida);
@@ -260,6 +283,24 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del alumno";
+            // 
+            // lblBusquedaFallida
+            // 
+            this.lblBusquedaFallida.AutoSize = true;
+            this.lblBusquedaFallida.ForeColor = System.Drawing.Color.Red;
+            this.lblBusquedaFallida.Location = new System.Drawing.Point(78, 147);
+            this.lblBusquedaFallida.Name = "lblBusquedaFallida";
+            this.lblBusquedaFallida.Size = new System.Drawing.Size(35, 13);
+            this.lblBusquedaFallida.TabIndex = 8;
+            this.lblBusquedaFallida.Text = "label7";
+            this.lblBusquedaFallida.Visible = false;
+            // 
+            // txtFechaInscripcion
+            // 
+            this.txtFechaInscripcion.Location = new System.Drawing.Point(119, 108);
+            this.txtFechaInscripcion.Name = "txtFechaInscripcion";
+            this.txtFechaInscripcion.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaInscripcion.TabIndex = 7;
             // 
             // label6
             // 
@@ -380,50 +421,21 @@
             this.tabPage4.Text = "Borrar alumno";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // txtFechaInscripcion
+            // button2
             // 
-            this.txtFechaInscripcion.Location = new System.Drawing.Point(119, 108);
-            this.txtFechaInscripcion.Name = "txtFechaInscripcion";
-            this.txtFechaInscripcion.Size = new System.Drawing.Size(100, 20);
-            this.txtFechaInscripcion.TabIndex = 7;
-            // 
-            // lblBusquedaFallida
-            // 
-            this.lblBusquedaFallida.AutoSize = true;
-            this.lblBusquedaFallida.ForeColor = System.Drawing.Color.Red;
-            this.lblBusquedaFallida.Location = new System.Drawing.Point(78, 147);
-            this.lblBusquedaFallida.Name = "lblBusquedaFallida";
-            this.lblBusquedaFallida.Size = new System.Drawing.Size(35, 13);
-            this.lblBusquedaFallida.TabIndex = 8;
-            this.lblBusquedaFallida.Text = "label7";
-            this.lblBusquedaFallida.Visible = false;
-            // 
-            // cmbBoxFormato
-            // 
-            this.cmbBoxFormato.FormattingEnabled = true;
-            this.cmbBoxFormato.Items.AddRange(new object[] {
-            "Txt",
-            "Json",
-            "Xml"});
-            this.cmbBoxFormato.Location = new System.Drawing.Point(9, 113);
-            this.cmbBoxFormato.Name = "cmbBoxFormato";
-            this.cmbBoxFormato.Size = new System.Drawing.Size(100, 21);
-            this.cmbBoxFormato.TabIndex = 6;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Formato";
+            this.button2.Location = new System.Drawing.Point(152, 289);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // AlumnoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 242);
+            this.ClientSize = new System.Drawing.Size(657, 436);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.tabControl1);
             this.Name = "AlumnoForm";
             this.Text = "Formulario Alumno";
@@ -477,5 +489,6 @@
         private System.Windows.Forms.TextBox txtFechaInscripcion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbBoxFormato;
+        private System.Windows.Forms.Button button2;
     }
 }
